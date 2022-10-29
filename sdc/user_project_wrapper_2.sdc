@@ -6,7 +6,7 @@ set ::env(SYNTH_CLOCK_UNCERTAINITY) 0.25
 set ::env(SYNTH_CLOCK_TRANSITION) 0.15
 
 ## MASTER CLOCKS
-create_clock -name "io_clock" -period 20 [get_ports {mprj_io[37]}] -duty_cycle 50
+create_clock -name "io_clock" -period 20 [get_ports {mprj_io[37]}]
 
 set_propagated_clock [get_clocks {io_clock}]
 
