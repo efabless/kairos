@@ -1,0 +1,11 @@
+****************************************
+Report : global_timing
+	-format { narrow }
+	-separate_all_groups
+Design : caravel
+Version: T-2022.03-SP3
+Date   : Sat Oct 29 10:48:28 2022
+****************************************
+
+
+1
