@@ -16,6 +16,7 @@ set output_delay_value 5
 puts "\[INFO\]: Setting output delay to: $output_delay_value"
 puts "\[INFO\]: Setting input delay to: $input_delay_value"
 
+set_input_delay $input_delay_value  -clock [get_clocks {io_clock}] -add_delay [get_ports {mprj_io[0]}]
 set_input_delay $input_delay_value  -clock [get_clocks {io_clock}] -add_delay [get_ports {mprj_io[1]}]
 set_input_delay $input_delay_value  -clock [get_clocks {io_clock}] -add_delay [get_ports {mprj_io[2]}]
 set_input_delay $input_delay_value  -clock [get_clocks {io_clock}] -add_delay [get_ports {mprj_io[3]}]
@@ -53,7 +54,7 @@ set_input_delay $input_delay_value  -clock [get_clocks {io_clock}] -add_delay [g
 set_input_delay $input_delay_value  -clock [get_clocks {io_clock}] -add_delay [get_ports {mprj_io[34]}]
 set_input_delay $input_delay_value  -clock [get_clocks {io_clock}] -add_delay [get_ports {mprj_io[35]}]
 set_input_delay $input_delay_value  -clock [get_clocks {io_clock}] -add_delay [get_ports {mprj_io[36]}]
-set_input_delay $input_delay_value  -clock [get_clocks {io_clock}] -add_delay [get_ports {mprj_io[37]}]
+set_input_delay 0  -clock [get_clocks {io_clock}] -add_delay [get_ports {mprj_io[37]}]
 
 set_output_delay $output_delay_value -clock [get_clocks {io_clock}] -add_delay [get_ports {mprj_io[0]}]
 set_output_delay $output_delay_value -clock [get_clocks {io_clock}] -add_delay [get_ports {mprj_io[1]}]
